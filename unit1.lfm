@@ -1,69 +1,91 @@
 object Form1: TForm1
   Left = 652
-  Height = 501
+  Height = 626
   Top = 104
-  Width = 673
+  Width = 841
   Caption = 'Form1'
-  ClientHeight = 480
-  ClientWidth = 673
+  ClientHeight = 600
+  ClientWidth = 841
+  DesignTimePPI = 120
   Menu = Fille
   LCLVersion = '2.0.0.4'
   object Memo1: TMemo
-    Left = 16
-    Height = 408
-    Top = 64
-    Width = 646
+    Left = 20
+    Height = 510
+    Top = 80
+    Width = 808
     Lines.Strings = (
       'Memo1'
     )
+    ParentFont = False
     TabOrder = 0
   end
   object Fille: TMainMenu
-    left = 16
-    top = 8
+    left = 20
+    top = 10
     object Create: TMenuItem
-      Caption = 'Create'
+      Caption = 'File'
       OnClick = CreateClick
+      object MenuItem1: TMenuItem
+        Caption = 'Create'
+      end
+      object MenuItem2: TMenuItem
+        Caption = 'Open'
+      end
+      object MenuItem3: TMenuItem
+        Caption = 'Close'
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'Save'
+      end
+      object MenuItem5: TMenuItem
+        Caption = 'Save as...'
+      end
+      object MenuItem6: TMenuItem
+        Caption = 'Log out'
+      end
     end
     object Open: TMenuItem
-      Caption = 'Open'
+      Caption = 'Edit'
+      object MenuItem7: TMenuItem
+        Caption = 'Select all'
+      end
+      object MenuItem8: TMenuItem
+        Caption = 'Cut'
+      end
+      object MenuItem9: TMenuItem
+        Caption = 'Copy'
+      end
+      object MenuItem10: TMenuItem
+        Caption = 'Paste'
+      end
     end
     object Close: TMenuItem
-      Caption = 'Close'
+      Caption = 'View'
+      object MenuItem11: TMenuItem
+        Caption = 'Styles'
+      end
+      object MenuItem12: TMenuItem
+        Caption = 'Theme'
+      end
     end
     object Save: TMenuItem
-      Caption = 'Save'
+      Caption = 'Search'
+      object MenuItem13: TMenuItem
+        Caption = 'Find'
+      end
+      object MenuItem14: TMenuItem
+        Caption = 'Replace'
+      end
     end
     object Save_as: TMenuItem
-      Caption = 'Save_as'
+      Caption = 'Help'
+      object MenuItem15: TMenuItem
+        Caption = 'Help'
+      end
+      object MenuItem16: TMenuItem
+        Caption = 'About program'
+      end
     end
-    object Log_out: TMenuItem
-      Caption = 'Log_out'
-    end
-  end
-  object Edit: TMainMenu
-    left = 72
-    top = 8
-    object VblDLIT: TMenuItem
-      Caption = 'VblDLIT'
-    end
-    object Cut: TMenuItem
-      Caption = 'Cut'
-    end
-    object MenuItem1: TMenuItem
-      Caption = 'MenuItem1'
-    end
-  end
-  object View: TMainMenu
-    left = 128
-    top = 8
-  end
-  object Search: TMainMenu
-    left = 184
-    top = 8
-  end
-  object Reference: TMainMenu
-    left = 240
-    top = 8
   end
 end
