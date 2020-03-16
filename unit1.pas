@@ -15,6 +15,8 @@ type
     Fille: TMainMenu;
     Memo1: TMemo;
     Fillle: TMenuItem;
+    OpenDialog1: TOpenDialog;
+    SaveDialog1: TSaveDialog;
     View: TMenuItem;
     MenuItem1: TMenuItem;
     MenuItem10: TMenuItem;
@@ -37,7 +39,10 @@ type
     Search: TMenuItem;
     Edit: TMenuItem;
     procedure FillleClick(Sender: TObject);
-    procedure MenuItem11Click(Sender: TObject);
+    procedure MenuItem2Click(Sender: TObject);
+    procedure MenuItem3Click(Sender: TObject);
+    procedure MenuItem4Click(Sender: TObject);
+    procedure MenuItem5Click(Sender: TObject);
   private
 
   public
@@ -46,6 +51,7 @@ type
 
 var
   Form1: TForm1;
+  FName: string;
 
 implementation
 
@@ -58,9 +64,33 @@ begin
 
 end;
 
-procedure TForm1.MenuItem11Click(Sender: TObject);
+procedure TForm1.MenuItem2Click(Sender: TObject);
+begin
+   if OpenDialog1.Execute then
+  begin
+    FName := OpenDialog1.FileName;
+    Memo1.Lines.LoadFromFile(FName);
+  end;
+end;
+
+procedure TForm1.MenuItem3Click(Sender: TObject);
+begin
+   Form1.Close;
+   Application.Terminate;
+end;
+
+procedure TForm1.MenuItem4Click(Sender: TObject);
 begin
 
+end;
+
+procedure TForm1.MenuItem5Click(Sender: TObject);
+begin
+   if SaveDialog1.Execute then
+     begin
+       FName := SaveDialog1.FileName;
+       Memo1.Lines.SaveToFile(Fname);
+     end;
 end;
 
 end.
