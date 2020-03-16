@@ -15,6 +15,11 @@ type
     Fille: TMainMenu;
     Memo1: TMemo;
     Fillle: TMenuItem;
+    MenuItem18: TMenuItem;
+    MenuItem19: TMenuItem;
+    MenuItem20: TMenuItem;
+    MenuItem21: TMenuItem;
+    MenuItem22: TMenuItem;
     View: TMenuItem;
     MenuItem1: TMenuItem;
     MenuItem10: TMenuItem;
@@ -38,6 +43,11 @@ type
     Edit: TMenuItem;
     procedure FillleClick(Sender: TObject);
     procedure MenuItem11Click(Sender: TObject);
+    procedure MenuItem18Click(Sender: TObject);
+    procedure MenuItem19Click(Sender: TObject);
+    procedure MenuItem20Click(Sender: TObject);
+    procedure MenuItem21Click(Sender: TObject);
+    procedure MenuItem22Click(Sender: TObject);
   private
 
   public
@@ -61,6 +71,31 @@ end;
 procedure TForm1.MenuItem11Click(Sender: TObject);
 begin
 
+end;
+
+procedure TForm1.MenuItem18Click(Sender: TObject);
+begin
+    Form1.color:=clPurple;
+end;
+
+procedure TForm1.MenuItem19Click(Sender: TObject);
+begin
+    Form1.color:=clGreen;
+end;
+
+procedure TForm1.MenuItem20Click(Sender: TObject);
+begin
+    Form1.color:=clBase;
+end;
+procedure TForm1.MenuItem21Click(Sender: TObject);
+
+begin
+    Form1.color:=clBlack;
+end;
+procedure TForm1.MenuItem22Click(Sender: TObject);
+
+begin
+    Form1.color:=clBlue;
 end;
 
 end.
