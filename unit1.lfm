@@ -1,19 +1,18 @@
 object Form1: TForm1
-  Left = 652
-  Height = 626
-  Top = 104
-  Width = 841
+  Left = 565
+  Height = 501
+  Top = 142
+  Width = 673
   Caption = 'Form1'
-  ClientHeight = 600
-  ClientWidth = 841
-  DesignTimePPI = 120
+  ClientHeight = 480
+  ClientWidth = 673
   Menu = Fille
   LCLVersion = '2.0.0.4'
   object Memo1: TMemo
-    Left = 20
-    Height = 510
-    Top = 80
-    Width = 808
+    Left = 16
+    Height = 408
+    Top = 64
+    Width = 646
     Lines.Strings = (
       'Memo1'
     )
@@ -21,11 +20,11 @@ object Form1: TForm1
     TabOrder = 0
   end
   object Fille: TMainMenu
-    left = 20
-    top = 10
-    object Create: TMenuItem
+    left = 16
+    top = 8
+    object Fillle: TMenuItem
       Caption = 'File'
-      OnClick = CreateClick
+      OnClick = FillleClick
       object MenuItem1: TMenuItem
         Caption = 'Create'
       end
@@ -45,7 +44,7 @@ object Form1: TForm1
         Caption = 'Log out'
       end
     end
-    object Open: TMenuItem
+    object Edit: TMenuItem
       Caption = 'Edit'
       object MenuItem7: TMenuItem
         Caption = 'Select all'
@@ -60,16 +59,20 @@ object Form1: TForm1
         Caption = 'Paste'
       end
     end
-    object Close: TMenuItem
+    object View: TMenuItem
       Caption = 'View'
       object MenuItem11: TMenuItem
         Caption = 'Styles'
+        OnClick = MenuItem11Click
       end
       object MenuItem12: TMenuItem
         Caption = 'Theme'
       end
+      object MenuItem17: TMenuItem
+        Caption = 'Language'
+      end
     end
-    object Save: TMenuItem
+    object Search: TMenuItem
       Caption = 'Search'
       object MenuItem13: TMenuItem
         Caption = 'Find'
@@ -78,7 +81,7 @@ object Form1: TForm1
         Caption = 'Replace'
       end
     end
-    object Save_as: TMenuItem
+    object Help: TMenuItem
       Caption = 'Help'
       object MenuItem15: TMenuItem
         Caption = 'Help'
