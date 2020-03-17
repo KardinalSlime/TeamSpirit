@@ -1,0 +1,141 @@
+object Form1: TForm1
+  Left = 389
+  Height = 501
+  Top = 190
+  Width = 673
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 673
+  Menu = Fille
+  LCLVersion = '2.0.0.4'
+  object Memo1: TMemo
+    Left = 24
+    Height = 408
+    Top = 56
+    Width = 646
+    Lines.Strings = (
+      'Memo1'
+    )
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Fille: TMainMenu
+    left = 16
+    top = 8
+    object Fillle: TMenuItem
+      Caption = 'File'
+      OnClick = FillleClick
+      object MenuItem1: TMenuItem
+        Caption = 'Create'
+      end
+      object MenuItem2: TMenuItem
+        Caption = 'Open'
+        OnClick = MenuItem2Click
+      end
+      object MenuItem3: TMenuItem
+        Caption = 'Close'
+        OnClick = MenuItem3Click
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'Save'
+        OnClick = MenuItem4Click
+      end
+      object MenuItem5: TMenuItem
+        Caption = 'Save as...'
+        OnClick = MenuItem5Click
+      end
+      object MenuItem6: TMenuItem
+        Caption = 'Log out'
+        OnClick = MenuItem6Click
+      end
+    end
+    object Edit: TMenuItem
+      Caption = 'Edit'
+      object MenuItem7: TMenuItem
+        Caption = 'Select all'
+      end
+      object MenuItem8: TMenuItem
+        Caption = 'Cut'
+      end
+      object MenuItem9: TMenuItem
+        Caption = 'Copy'
+      end
+      object MenuItem10: TMenuItem
+        Caption = 'Paste'
+      end
+    end
+    object View: TMenuItem
+      Caption = 'View'
+      object MenuItem11: TMenuItem
+        Caption = 'Styles'
+        OnClick = MenuItem11Click
+      end
+      object MenuItem12: TMenuItem
+        Caption = 'Theme'
+        object MenuItem18: TMenuItem
+          Caption = 'Purple'
+          OnClick = MenuItem18Click
+        end
+        object MenuItem19: TMenuItem
+          Caption = 'Green'
+          OnClick = MenuItem19Click
+        end
+        object MenuItem20: TMenuItem
+          Caption = 'Standart'
+          OnClick = MenuItem20Click
+        end
+        object MenuItem21: TMenuItem
+          Caption = 'Black'
+          OnClick = MenuItem21Click
+        end
+        object MenuItem22: TMenuItem
+          Caption = 'Blue'
+          OnClick = MenuItem22Click
+        end
+      end
+      object MenuItem17: TMenuItem
+        Caption = 'Language'
+        OnClick = MenuItem17Click
+        object MenuItem23: TMenuItem
+          Caption = 'En'
+          OnClick = EnClick
+        end
+        object MenuItem24: TMenuItem
+          Caption = 'Rus'
+          OnClick = RusClick
+        end
+      end
+    end
+    object Search: TMenuItem
+      Caption = 'Search'
+      object MenuItem13: TMenuItem
+        Caption = 'Find'
+      end
+      object MenuItem14: TMenuItem
+        Caption = 'Replace'
+      end
+    end
+    object Help: TMenuItem
+      Caption = 'Help'
+      object MenuItem15: TMenuItem
+        Caption = 'Help'
+      end
+      object MenuItem16: TMenuItem
+        Caption = 'About program'
+      end
+    end
+  end
+  object SaveDialog1: TSaveDialog
+    Title = 'Save file as'
+    DefaultExt = '.txt'
+    FileName = 'Untitled'
+    left = 72
+    top = 8
+  end
+  object OpenDialog1: TOpenDialog
+    Title = 'Open file'
+    Filter = '.txt|*.txt'
+    left = 128
+    top = 8
+  end
+end

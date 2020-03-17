@@ -1,0 +1,105 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: tform1.caption
+msgid "Form1"
+msgstr "Text Editor"
+
+#: tform1.edit.caption
+msgid "Edit"
+msgstr ""
+
+#: tform1.en.caption
+msgid "En"
+msgstr "English"
+
+#: tform1.fillle.caption
+msgid "File"
+msgstr ""
+
+#: tform1.help.caption
+msgctxt "tform1.help.caption"
+msgid "Help"
+msgstr ""
+
+#: tform1.menuitem1.caption
+msgid "Create"
+msgstr ""
+
+#: tform1.menuitem10.caption
+msgid "Paste"
+msgstr ""
+
+#: tform1.menuitem11.caption
+msgid "Styles"
+msgstr ""
+
+#: tform1.menuitem12.caption
+msgid "Theme"
+msgstr ""
+
+#: tform1.menuitem13.caption
+msgid "Find"
+msgstr ""
+
+#: tform1.menuitem14.caption
+msgid "Replace"
+msgstr ""
+
+#: tform1.menuitem15.caption
+msgctxt "tform1.menuitem15.caption"
+msgid "Help"
+msgstr ""
+
+#: tform1.menuitem16.caption
+msgid "About program"
+msgstr ""
+
+#: tform1.menuitem17.caption
+msgid "Language"
+msgstr ""
+
+#: tform1.menuitem2.caption
+msgid "Open"
+msgstr ""
+
+#: tform1.menuitem3.caption
+msgid "Close"
+msgstr ""
+
+#: tform1.menuitem4.caption
+msgid "Save"
+msgstr ""
+
+#: tform1.menuitem5.caption
+msgid "Save as..."
+msgstr ""
+
+#: tform1.menuitem6.caption
+msgid "Log out"
+msgstr ""
+
+#: tform1.menuitem7.caption
+msgid "Select all"
+msgstr ""
+
+#: tform1.menuitem8.caption
+msgid "Cut"
+msgstr ""
+
+#: tform1.menuitem9.caption
+msgid "Copy"
+msgstr ""
+
+#: tform1.rus.caption
+msgid "Rus"
+msgstr "Russian"
+
+#: tform1.search.caption
+msgid "Search"
+msgstr ""
+
+#: tform1.view.caption
+msgid "View"
+msgstr ""
+
