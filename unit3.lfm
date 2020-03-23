@@ -1,0 +1,26 @@
+object Form3: TForm3
+  Left = 780
+  Height = 240
+  Top = 306
+  Width = 320
+  Caption = 'About program'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '2.0.6.0'
+  object Label1: TLabel
+    Left = 104
+    Height = 15
+    Top = 16
+    Width = 120
+    Caption = 'The beast text redactor'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 15
+    Top = 120
+    Width = 277
+    Caption = 'Contributors : Soyko A.A., Sergeev V.I., Melnikov A.E.'
+    ParentColor = False
+  end
+end

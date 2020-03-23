@@ -1,0 +1,31 @@
+object Form2: TForm2
+  Left = 687
+  Height = 468
+  Top = 215
+  Width = 609
+  Caption = 'Help'
+  ClientHeight = 468
+  ClientWidth = 609
+  Color = clNone
+  LCLVersion = '2.0.6.0'
+  object Button1: TButton
+    Left = 256
+    Height = 25
+    Top = 304
+    Width = 75
+    Caption = 'Remove'
+    Color = clMenuHighlight
+    OnClick = Button1Click
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 264
+    Height = 15
+    Top = 160
+    Width = 58
+    Caption = 'This is help'
+    ParentColor = False
+    ParentFont = False
+  end
+end
