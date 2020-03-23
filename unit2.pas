@@ -40,7 +40,7 @@ begin
   if Form1.SaveDialog1.Execute then
        begin
          FName := Form1.SaveDialog1.FileName;
-         Form1.Memo1.Lines.SaveToFile(Fname);
+         Form1.SynEdit1.Lines.SaveToFile(Fname);
        end;
   Form1.Close;
   Application.Terminate;
