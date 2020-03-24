@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 1100
+  Left = 1006
   Height = 507
-  Top = 274
+  Top = 240
   Width = 673
   Caption = 'Form1'
   ClientHeight = 487
@@ -514,7 +514,6 @@ object Form1: TForm1
       OnClick = FillleClick
       object MenuItem1: TMenuItem
         Caption = 'Create'
-        OnClick = MenuItem1Click
       end
       object MenuItem2: TMenuItem
         Caption = 'Open'
@@ -565,11 +564,11 @@ object Form1: TForm1
       object MenuItem12: TMenuItem
         Caption = 'Theme'
         object MenuItem18: TMenuItem
-          Caption = 'Purple'
+          Caption = 'Black'
           OnClick = MenuItem18Click
         end
         object MenuItem19: TMenuItem
-          Caption = 'Green'
+          Caption = 'Gray'
           OnClick = MenuItem19Click
         end
         object MenuItem20: TMenuItem
@@ -577,11 +576,11 @@ object Form1: TForm1
           OnClick = MenuItem20Click
         end
         object MenuItem21: TMenuItem
-          Caption = 'Black'
+          Caption = 'Money Green'
           OnClick = MenuItem21Click
         end
         object MenuItem22: TMenuItem
-          Caption = 'Blue'
+          Caption = 'Sky Blue'
           OnClick = MenuItem22Click
         end
       end
@@ -677,7 +676,8 @@ object Form1: TForm1
     top = 8
   end
   object ReplaceDialog1: TReplaceDialog
-    Options = [frDown, frReplace, frReplaceAll, frHidePromptOnReplace]
+    Options = [frDown, frFindNext, frHidePromptOnReplace]
+    OnReplace = ReplaceDialog1Replace
     left = 248
     top = 8
   end

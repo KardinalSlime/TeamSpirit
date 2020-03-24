@@ -42,6 +42,8 @@ type
     SynCppSyn1: TSynCppSyn;
     SynCssSyn1: TSynCssSyn;
     SynEdit1: TSynEdit;
+    SynEdit2: TSynEdit;
+    SynEdit3: TSynEdit;
     SynHTMLSyn1: TSynHTMLSyn;
     SynJavaSyn1: TSynJavaSyn;
     View: TMenuItem;
@@ -77,7 +79,6 @@ type
     procedure MenuItem17Click(Sender: TObject);
     procedure MenuItem18Click(Sender: TObject);
     procedure MenuItem19Click(Sender: TObject);
-    procedure MenuItem1Click(Sender: TObject);
     procedure MenuItem20Click(Sender: TObject);
     procedure MenuItem21Click(Sender: TObject);
     procedure MenuItem22Click(Sender: TObject);
@@ -95,6 +96,7 @@ type
     procedure MenuItem5Click(Sender: TObject);
     procedure MenuItem6Click(Sender: TObject);
     procedure FindDialog1Find(Sender: TObject);
+    procedure ReplaceDialog1Replace(Sender: TObject);
   private
 
   public
@@ -162,13 +164,6 @@ begin
 end else MessageDlg ('Строка ' + FindDialog1.FindText + ' не найдена!', mtConfirmation, [mbYes], 0);
 end;
 
-
-procedure TForm1.MenuItem14Click(Sender: TObject);
-begin
-    ReplaceDialog1.Execute();
-end;
-
-
 procedure TForm1.MenuItem17Click(Sender: TObject);
 begin
 
@@ -177,32 +172,61 @@ end;
        //Sasha
 procedure TForm1.MenuItem18Click(Sender: TObject);
 begin
-    Form1.color:=clPurple;
+  synEdit1.Color:= clBlack;
+  SynEdit1.Font.Color:= clWhite;
+  Form1.color:=clBlack;
+  synEdit1.Gutter.color:=clBlack;
+  synEdit1.RightGutter.color:=clBlack;
 end;
 
 procedure TForm1.MenuItem19Click(Sender: TObject);
 begin
-    Form1.color:=clGreen;
-end;
-
-procedure TForm1.MenuItem1Click(Sender: TObject);
-begin
-
+   synEdit1.Color:= clGray;
+   SynEdit1.Font.Color:= clBlack;
+   Form1.color:=clGray;
+   synEdit1.Gutter.color:=clGray;
+   synEdit1.RightGutter.color:=clGray;
 end;
 
 procedure TForm1.MenuItem20Click(Sender: TObject);
 begin
-    Form1.color:=clBase;
+    synEdit1.Color:= clWhite;
+    SynEdit1.Font.Color:= clBlack;
+    Form1.color:=clWhite;
+    synEdit1.Gutter.color:=clWhite;
+    synEdit1.RightGutter.color:=clWhite;
 end;
 procedure TForm1.MenuItem21Click(Sender: TObject);
 
 begin
-    Form1.color:=clBlack;
+   synEdit1.Color:= clMoneyGreen;
+   SynEdit1.Font.Color:= clBlack;
+   Form1.color:=clMoneyGreen;
+   synEdit1.Gutter.color:=clMoneyGreen;
+   synEdit1.RightGutter.color:=clMoneyGreen;
 end;
 procedure TForm1.MenuItem22Click(Sender: TObject);
 
 begin
-    Form1.color:=clBlue;
+   synEdit1.Color:= clSkyBlue;
+   SynEdit1.Font.Color:= clBlack;
+   Form1.color:=clSkyBlue;
+   synEdit1.Gutter.color:=clSkyBlue;
+   synEdit1.RightGutter.color:=clSkyBlue;
+end;
+
+procedure TForm1.MenuItem14Click(Sender: TObject);
+begin
+    ReplaceDialog1.Execute();
+end;
+
+procedure TForm1.ReplaceDialog1Replace(Sender: TObject);
+var temp1: String;
+  newTemp: String;
+begin
+  temp1:= SynEdit1.Text;
+  newTemp:= StringReplace(temp1, ReplaceDialog1.FindText, ReplaceDialog1.ReplaceText, []);
+  SynEdit1.Text:= newTemp;
 end;
 
  //Nastya
