@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Menus,
   LCLTranslator, unit2, SynEdit, SynHighlighterCpp, SynHighlighterJava,
-  SynHighlighterHTML, SynHighlighterCss;
+  SynHighlighterHTML, SynHighlighterCss, LCLProc;
 
 type
 
@@ -151,10 +151,17 @@ begin
    FindDialog1.Execute();
 end;
 
+
 procedure TForm1.FindDialog1Find(Sender: TObject);
 begin
-      MessageDlg ('Строка  не найдена!', mtConfirmation, [mbYes], 0);
+if pos(FindDialog1.FindText,SynEdit1.Text) <> 0 then
+begin
+   SynEdit1.HideSelection := False;
+   SynEdit1.SelStart := pos(FindDialog1.FindText, SynEdit1.Text);
+   SynEdit1.SelEnd := SynEdit1.SelStart + Length(FindDialog1.FindText);
+end else MessageDlg ('Строка ' + FindDialog1.FindText + ' не найдена!', mtConfirmation, [mbYes], 0);
 end;
+
 
 procedure TForm1.MenuItem14Click(Sender: TObject);
 begin
