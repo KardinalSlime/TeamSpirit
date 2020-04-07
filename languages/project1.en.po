@@ -3,11 +3,11 @@ msgstr "Content-Type: text/plain; charset=UTF-8"
 
 #: tform1.caption
 msgid "Form1"
-msgstr "Text Editor"
+msgstr "Text editor"
 
 #: tform1.edit.caption
 msgid "Edit"
-msgstr ""
+msgstr "Edit"
 
 #: tform1.en.caption
 msgid "En"
@@ -15,81 +15,97 @@ msgstr "English"
 
 #: tform1.fillle.caption
 msgid "File"
-msgstr ""
+msgstr "File"
 
 #: tform1.help.caption
 msgctxt "tform1.help.caption"
 msgid "Help"
-msgstr ""
+msgstr "Help"
+
+#: tform1.view.caption
+msgid "View"
+msgstr "View"
 
 #: tform1.menuitem1.caption
 msgid "Create"
-msgstr ""
+msgstr "Create"
 
 #: tform1.menuitem10.caption
 msgid "Paste"
-msgstr ""
+msgstr "Paste"
 
 #: tform1.menuitem11.caption
 msgid "Styles"
-msgstr ""
+msgstr "Styles"
 
 #: tform1.menuitem12.caption
 msgid "Theme"
-msgstr ""
+msgstr "Theme"
 
 #: tform1.menuitem13.caption
 msgid "Find"
-msgstr ""
+msgstr "Find"
 
 #: tform1.menuitem14.caption
 msgid "Replace"
-msgstr ""
+msgstr "Replace"
 
 #: tform1.menuitem15.caption
 msgctxt "tform1.menuitem15.caption"
 msgid "Help"
-msgstr ""
+msgstr "Help"
 
 #: tform1.menuitem16.caption
 msgid "About program"
-msgstr ""
+msgstr "About program"
+
+#: tform1.menuitem23.caption
+msgid "En"
+msgstr "English"
+
+#: tform1.menuitem24.caption
+msgid "Rus"
+msgstr "Russian"
+
+#: tform1.menuitem25.caption
+msgid "Syntax"
+msgstr "Syntax"
 
 #: tform1.menuitem17.caption
 msgid "Language"
-msgstr ""
+msgstr "Language"
 
 #: tform1.menuitem2.caption
 msgid "Open"
-msgstr ""
+msgstr "Open"
 
 #: tform1.menuitem3.caption
 msgid "Close"
-msgstr ""
+msgstr "Close"
 
 #: tform1.menuitem4.caption
 msgid "Save"
-msgstr ""
+msgstr "Save"
 
 #: tform1.menuitem5.caption
 msgid "Save as..."
-msgstr ""
+msgstr "Save as..."
 
 #: tform1.menuitem6.caption
 msgid "Log out"
-msgstr ""
+msgstr "Exit"
 
 #: tform1.menuitem7.caption
 msgid "Select all"
-msgstr ""
+msgstr "Select all"
 
 #: tform1.menuitem8.caption
 msgid "Cut"
-msgstr ""
+msgstr "Cut"
 
 #: tform1.menuitem9.caption
 msgid "Copy"
-msgstr ""
+msgstr "Copy"
 
 #: tform1.rus.caption
 msgid "Rus"
@@ -97,10 +113,75 @@ msgstr "Russian"
 
 #: tform1.search.caption
 msgid "Search"
-msgstr ""
+msgstr "Search"
 
-#: tform1.view.caption
-msgid "View"
-msgstr ""
+#: tform1.fontdialog.caption
+msgid "Font"
+msgstr "Font"
 
+#: tform1.about.caption
+msgid "About program"
+msgstr "About program"
 
+#: tform2.button1.caption
+msgid "Remove"
+msgstr "Remove"
+
+#: tform2.caption
+msgctxt "tform2.caption"
+msgid "Help"
+msgstr "Help"
+
+#: tform2.label1.caption
+msgid "This is help"
+msgstr "This is help"
+
+#: tform3.caption
+msgctxt "tform3.caption"
+msgid "About program"
+msgstr "About program"
+
+#: tform3.label1.caption
+msgid "The beast text redactor"
+msgstr "The beast text redactor"
+
+#: tform3.label2.caption
+msgid "Contributors : Soyko A.A., Sergeev V.I., Melnikov A.E."
+msgstr "Contributors : Soyko A.A., Sergeev V.I., Melnikov A.E."
+
+#: unit1.redited
+msgid "Changed"
+msgstr "Changed"
+
+#: unit1.rfile
+msgid "File "
+msgstr "File "
+
+#: unit1.rfilednotsaved
+msgid " not saved. Save?"
+msgstr " not saved. Save?"
+
+#: unit1.rline
+msgid "Line: "
+msgstr "Line: "
+
+#: unit1.rnewdocument
+msgid "New document"
+msgstr "New document"
+
+#: unit1.rnotsavefile
+msgid "Dont save"
+msgstr "Don't save"
+
+#: unit1.rsaved
+msgid "Saved"
+msgstr "Saved"
+
+#: unit1.rsavefile
+msgctxt "unit1.rsavefile"
+msgid "Save"
+msgstr "Save"
+
+#: unit1.rwarning
+msgid "Warning"
+msgstr "Warning"

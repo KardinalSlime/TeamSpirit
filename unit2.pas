@@ -13,10 +13,8 @@ type
 
   TForm2 = class(TForm)
     Button1: TButton;
-    Button2: TButton;
     Label1: TLabel;
     procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
   private
 
   public
@@ -36,21 +34,7 @@ uses unit1;
 
 procedure TForm2.Button1Click(Sender: TObject);
 begin
-  Form2.Close;
-  if Form1.SaveDialog1.Execute then
-       begin
-         FName := Form1.SaveDialog1.FileName;
-         Form1.Memo1.Lines.SaveToFile(Fname);
-       end;
-  Form1.Close;
-  Application.Terminate;
-end;
-
-procedure TForm2.Button2Click(Sender: TObject);
-begin
-  Form2.Close;
-  Form1.Close;
-  Application.Terminate;
+    Form2.Close;
 end;
 
 end.

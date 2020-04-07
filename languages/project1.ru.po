@@ -15,12 +15,16 @@ msgstr "Английский язык"
 
 #: tform1.fillle.caption
 msgid "File"
-msgstr "Фаил"
+msgstr "Файл"
 
 #: tform1.help.caption
 msgctxt "tform1.help.caption"
 msgid "Help"
 msgstr "Справка"
+
+#: tform1.view.caption
+msgid "View"
+msgstr "Вид"
 
 #: tform1.menuitem1.caption
 msgid "Create"
@@ -49,11 +53,23 @@ msgstr "Заменить"
 #: tform1.menuitem15.caption
 msgctxt "tform1.menuitem15.caption"
 msgid "Help"
-msgstr "Спровка"
+msgstr "Справка"
 
 #: tform1.menuitem16.caption
 msgid "About program"
 msgstr "О программе"
+
+#: tform1.menuitem23.caption
+msgid "En"
+msgstr "Английский"
+
+#: tform1.menuitem24.caption
+msgid "Rus"
+msgstr "Русский"
+
+#: tform1.menuitem25.caption
+msgid "Syntax"
+msgstr "Синтаксис"
 
 #: tform1.menuitem17.caption
 msgid "Language"
@@ -99,7 +115,74 @@ msgstr "Русский язык"
 msgid "Search"
 msgstr "Поиск"
 
-#: tform1.view.caption
-msgid "View"
-msgstr "Вид"
+#: tform1.fontdialog.caption
+msgid "Font"
+msgstr "Шрифт"
+
+#: tform1.about.caption
+msgid "About program"
+msgstr "О программе"
+
+#: tform2.button1.caption
+msgid "Remove"
+msgstr "Убрать"
+
+#: tform2.caption
+msgctxt "tform2.caption"
+msgid "Help"
+msgstr "Справка"
+
+#: tform2.label1.caption
+msgid "This is help"
+msgstr "Это помощь"
+
+#: tform3.caption
+msgctxt "tform3.caption"
+msgid "About program"
+msgstr "О программе"
+
+#: tform3.label1.caption
+msgid "The beast text redactor"
+msgstr "Лучший текстовый редактор"
+
+#: tform3.label2.caption
+msgid "Contributors : Soyko A.A., Sergeev V.I., Melnikov A.E."
+msgstr "Разработчики: Сойко А.А., Сергеев В.И., Мельников А.Е."
+
+#: unit1.redited
+msgid "Changed"
+msgstr "Изменено"
+
+#: unit1.rfile
+msgid "File "
+msgstr "Файл "
+
+#: unit1.rfilednotsaved
+msgid " not saved. Save?"
+msgstr " Не сохранено.Сохранить?"
+
+#: unit1.rline
+msgid "Line: "
+msgstr "Строка: "
+
+#: unit1.rnewdocument
+msgid "New document"
+msgstr "Новый документ"
+
+#: unit1.rnotsavefile
+msgid "Dont save"
+msgstr "Не сохранять"
+
+#: unit1.rsaved
+msgid "Saved"
+msgstr "Сохранено"
+
+#: unit1.rsavefile
+msgctxt "unit1.rsavefile"
+msgid "Save"
+msgstr "Сохранить"
+
+#: unit1.rwarning
+msgid "Warning"
+msgstr "Предупреждение"
 
